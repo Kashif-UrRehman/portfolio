@@ -6,7 +6,7 @@ mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 
     const expanded = !mobileMenu.classList.contains("hidden");
-    mobileBtn.setAttribute("aria-expanded", expanded);
+    mobileMenuBtn.setAttribute("aria-expanded", expanded);
 });
 
 // Close mobile menu on clicking links
@@ -41,22 +41,23 @@ function copyContactInfo() {
 }
 
 // Skills Filter Logic
-function filterSkills(category) {
+function filterSkills(category, button) {
     const cards = document.querySelectorAll(".skill-card");
     const buttons = document.querySelectorAll(".skill-btn");
 
-    // Button styling toggle
     buttons.forEach((btn) => {
         btn.classList.remove("bg-emerald-500", "text-slate-950");
+
         btn.classList.add("bg-slate-800", "text-slate-300");
     });
 
-    event.target.classList.remove("bg-slate-800", "text-slate-300");
-    event.target.classList.add("bg-emerald-500", "text-slate-950");
+    button.classList.remove("bg-slate-800", "text-slate-300");
 
-    // Card filter animation logic
+    button.classList.add("bg-emerald-500", "text-slate-950");
+
     cards.forEach((card) => {
-        const cardCat = card.getAttribute("data-category");
+        const cardCat = card.dataset.category;
+
         if (category === "all" || cardCat.includes(category)) {
             card.style.display = "block";
         } else {

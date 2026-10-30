@@ -411,23 +411,23 @@
 
             <!-- Skill Filter Buttons -->
             <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="skillFilterContainer">
-                <button onclick="filterSkills('all')"
+                <button onclick="filterSkills('all',this)"
                     class="skill-btn px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-500 text-slate-950 transition-all shadow-md">
                     All Skills
                 </button>
-                <button onclick="filterSkills('automation')"
+                <button onclick="filterSkills('automation',this)"
                     class="skill-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:text-white transition-all">
                     Automation & Tools
                 </button>
-                <button onclick="filterSkills('testing')"
+                <button onclick="filterSkills('testing', this)"
                     class="skill-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:text-white transition-all">
                     Testing Types
                 </button>
-                <button onclick="filterSkills('domain')"
+                <button onclick="filterSkills('domain', this)"
                     class="skill-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:text-white transition-all">
                     Domain Expertise
                 </button>
-                <button onclick="filterSkills('management')"
+                <button onclick="filterSkills('management', this)"
                     class="skill-btn px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 hover:text-white transition-all">
                     Workflow & Management
                 </button>
@@ -437,7 +437,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="skillsGrid">
                 <!-- Card 1: Cypress & JS -->
                 <div class="skill-card bg-slate-900 border border-slate-800 p-5 rounded-xl hover:border-emerald-500/50 transition-all"
-                    data-category="automation">
+                    data-category="automation testing">
                     <div class="text-emerald-400 text-2xl mb-3">
                         <i class="fa-solid fa-code"></i>
                     </div>
