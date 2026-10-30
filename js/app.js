@@ -4,6 +4,9 @@ const mobileMenu = document.getElementById("mobileMenu");
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+
+    const expanded = !mobileMenu.classList.contains("hidden");
+    mobileBtn.setAttribute("aria-expanded", expanded);
 });
 
 // Close mobile menu on clicking links
@@ -90,3 +93,13 @@ function handleFormSubmit(e) {
         successMsg.classList.remove("hidden");
     }, 1200);
 }
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("nav-scrolled");
+    } else {
+        header.classList.remove("nav-scrolled");
+    }
+});
