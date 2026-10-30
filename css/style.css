@@ -149,3 +149,169 @@ body {
     transition:.3s;
 
 }
+
+/* ==========================
+   About Section
+========================== */
+
+
+.about-card {
+
+    background:rgba(15,23,42,.6);
+
+    border:1px solid #1e293b;
+
+    padding:32px;
+
+    border-radius:20px;
+
+}
+
+
+
+.about-card h3 {
+
+    color:white;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.about-card p {
+
+    color:#94a3b8;
+
+    line-height:1.7;
+
+}
+
+
+
+.about-icon {
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:rgba(16,185,129,.1);
+
+    color:#34d399;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+
+
+.about-card ul {
+
+    margin-top:20px;
+
+}
+
+
+
+.about-card li {
+
+    color:#cbd5e1;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.about-card li i {
+
+    color:#10b981;
+
+    margin-right:10px;
+
+}
+
+
+
+.about-stat-card {
+
+    background:#0f172a;
+
+    border:1px solid #1e293b;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+}
+
+
+
+.about-stat-card h4 {
+
+    color:#34d399;
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+}
+
+
+
+.about-stat-card p {
+
+    color:#94a3b8;
+
+    font-size:.85rem;
+
+    margin-top:8px;
+
+}
+
+
+
+.timeline-item {
+
+    border-left:2px solid #10b981;
+
+    padding-left:20px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.timeline-item span {
+
+    color:#34d399;
+
+    font-size:.8rem;
+
+}
+
+
+
+.timeline-item h4 {
+
+    color:white;
+
+    margin-top:5px;
+
+    font-weight:700;
+
+}
