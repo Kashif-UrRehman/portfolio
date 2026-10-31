@@ -79,20 +79,7 @@ function closeModal(modalId) {
 }
 
 // Simulated Form Submission
-function handleFormSubmit(e) {
-    e.preventDefault();
-    const submitBtn = document.getElementById("submitBtn");
-    const successMsg = document.getElementById("formSuccess");
 
-    submitBtn.disabled = true;
-    submitBtn.innerHTML =
-        '<i class="fa-solid fa-spinner animate-spin"></i> Sending...';
-
-    setTimeout(() => {
-        submitBtn.parentElement.classList.add("hidden");
-        successMsg.classList.remove("hidden");
-    }, 1200);
-}
 
 const header = document.querySelector("header");
 
